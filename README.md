@@ -24,18 +24,18 @@ To address the above challenge, this paper proposes a Hierarchical Attention Net
 
   Perform pre-processing of DNA sequences:
 
-  1. Convert the enhancer and promoter gene sequences into sequences consisting of words (6-mers), and if a word contains a ‘N’, the word is marked as ‘NULL’.
-  2. Construct a dictionary containing 4^6+1 words.
-  3. Convert each gene sequence into a sequence of word indexes according to the dictionary (each word has its own unique index).
+  1. Transform the enhancer and promoter gene sequences into word sequences (6-mers), marking a word as "NULL" if it contains a "N".
+  2. Create a dictionary with 4^6+1 words.
+  3. Transform each gene sequence into a list of dictionary-compliant word indexes (each word has its own unique index).
   4. save the dna2vec embeddings into .npz files
   
 - embedding_matrix.npy
 
-  The weight of the embedding layer converted from the pre-trained DNA vector provided by Ng (2017).
-
+    The weight of the embedding layer calculated using Ng's pre-trained DNA vector (2017).
+    
 - model.py
 
-    It contains the implementation of our proposed model
+    It contains the implementation of our proposed EPI-HAN model
 
 - layers.py
 
@@ -51,7 +51,7 @@ To address the above challenge, this paper proposes a Hierarchical Attention Net
 
 - train_dna2vec_oneHot.py
 
-  Perform model training with using the combination between dna-vec and one-hot embeddings
+  Perform model training with using the combination between dna2vec and one-hot embeddings.
 
 - test.py
 
