@@ -9,10 +9,6 @@ train_dir='./data/%s/train/'%name
 # imbltrain_dir='./data/%s/imbltrain/'%name
 test_dir='./data/%s/test/'%name
 
-# train_dir='./data/VAN_data/%s/train/'%name
-# imbltrain_dir='./data/VAN_data/%s/imbltrain/'%name
-# test_dir='./data/VAN_data/%s/test/'%name
-
 # oneHot Map:
 #   A -> [1,0,0,0]
 #   T -> [0,1,0,0]
