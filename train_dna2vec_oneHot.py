@@ -4,7 +4,7 @@
 import os
 import gc
 os.environ["CUDA_VISIBLE_DEVICES"]="0"
-type = "HAN_dna2vec_SelfSoftAttention_GM12878"
+type = "HAN_dna2vec_OneHot_SelfSoftAttention_GM12878"
 
 from model import get_model
 import numpy as np
