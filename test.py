@@ -2,15 +2,8 @@
 
 import os
 os.environ["CUDA_VISIBLE_DEVICES"]="5"
-kernal_size = 4
-num_filters = 20
-muti_layer_Conv_filters = [20, 40, 60, 80]
 
-# num_conv_layers = 4
-# pool_size = 4
-# strides = 1
-# kernal_size = 10
-type = "HAN_dna2vec_OneHot_SelfSoftAttention_GM12878"
+type = "HAN_dna2vec_OneHot_SelfSoftAttention/GM12878"
 from model import get_model
 import numpy as np
 from sklearn.metrics import roc_auc_score,average_precision_score, f1_score, precision_score, recall_score, confusion_matrix
