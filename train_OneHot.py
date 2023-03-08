@@ -2,7 +2,7 @@
 import os
 import gc
 os.environ["CUDA_VISIBLE_DEVICES"]="1"
-type = "HAN_OneHot_SoftAttention_HUVEC"
+type = "HAN_OneHot_SelfSoftAttention_HUVEC"
 kernal_size = 10
 num_filters = 20
 muti_layer_Conv_filters = [20, 40, 60, 80]
