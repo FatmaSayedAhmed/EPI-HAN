@@ -10,7 +10,7 @@ muti_layer_Conv_filters = [20, 40, 60, 80]
 # pool_size = 4
 # strides = 1
 # kernal_size = 10
-type = "VAN_OneHot_withConv40Only"
+type = "HAN_dna2vec_OneHot_SelfSoftAttention_GM12878"
 from model import get_model
 import numpy as np
 from sklearn.metrics import roc_auc_score,average_precision_score, f1_score, precision_score, recall_score, confusion_matrix
@@ -23,7 +23,7 @@ from tensorflow.compat.v1 import InteractiveSession
 # session = InteractiveSession(config=config)
 
 
-model_dir = "./model/specificModel"
+model_dir = "./model/specificModel/" + type
 
 models=['GM12878', 'HUVEC', 'HeLa-S3', 'IMR90', 'K562', 'NHEK']
 m=models[0]
@@ -48,11 +48,3 @@ auc = roc_auc_score(labels_test, y_pred)
 print("AUC : ", auc)
 aupr = average_precision_score(labels_test, y_pred)
 print("AUPR : ", aupr)
-
-# c_mat = confusion_matrix(labels_test, y_pred)
-# # sn = c_mat[1, 1] / np.sum(c_mat[1, :])  # 预测正确的正样本
-# # sp = c_mat[0, 0] / np.sum(c_mat[0, :])  # 预测正确的负样本
-# pr = c_mat[1,1] / (c_mat[1,1] + c_mat[0,1])  # TP / TP + FP
-# re = c_mat[1,1] / (c_mat[1,1] + c_mat[1,0])  # TP / TP + FN
-# f1 = (2 * pr * re) / (pr + re)  # f1-score for binary classification
-# print("F1_Score: ", f1)
