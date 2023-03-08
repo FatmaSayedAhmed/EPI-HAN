@@ -33,7 +33,7 @@ from tensorflow.keras import regularizers
 
 # from tensorflow_core.contrib.eager.python.examples.rnn_ptb.rnn_ptb import Embedding
 
-#attention_dim=30
+
 size=60
 num_hops=30
 
