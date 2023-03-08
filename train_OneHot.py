@@ -2,15 +2,8 @@
 import os
 import gc
 os.environ["CUDA_VISIBLE_DEVICES"]="1"
-type = "HAN_OneHot_SelfSoftAttention_HUVEC"
-kernal_size = 10
-num_filters = 20
-muti_layer_Conv_filters = [20, 40, 60, 80]
+type = "HAN_OneHot_SelfSoftAttention/HUVEC"
 
-# num_conv_layers = 4
-# pool_size = 4
-# strides = 1
-# kernal_size = 10
 from model import get_model
 import numpy as np
 from tensorflow.keras.callbacks import Callback
