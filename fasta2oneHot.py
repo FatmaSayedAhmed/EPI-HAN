@@ -6,7 +6,6 @@ from keras.preprocessing.sequence import pad_sequences
 name='HeLa-S3'
 
 train_dir='./data/%s/train/'%name
-# imbltrain_dir='./data/%s/imbltrain/'%name
 test_dir='./data/%s/test/'%name
 
 # oneHot Map:
