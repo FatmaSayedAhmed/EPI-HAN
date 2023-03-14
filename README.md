@@ -59,8 +59,8 @@ To address the above challenge, this paper proposes a Hierarchical Attention Net
   
 You can find the weight of the model mentioned in our paper under the directory ./model
 
-Directory|Content
-  ---|---|---
+Directory|Content 
+  ---|---
   model/OneHot/SelfAttention/| the weight of EPI-HAN with using the one-hot embedding and self attention mechanism on each cell line.
   model/OneHot/SoftAttention/| the weight of EPI-HAN with using the one-hot embedding and soft attention mechanism on each cell line.
   model/OneHot/SelfSoftAttention/| the weight of EPI-HAN with using the one-hot embedding and self + soft attention mechanisms on each cell line.
