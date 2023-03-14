@@ -59,17 +59,17 @@ To address the above challenge, this paper proposes a Hierarchical Attention Net
   
 You can find the weight of the model mentioned in our paper under the directory ./model
 
-Directory| Content
-  ---|---
-  model/EPI-HAN_OneHot_SelfAttention/| the weight of EPI-HAN with using the one-hot embedding and self attention mechanism on each cell line.
-  model/EPI-HAN_OneHot_SoftAttention/ | the weight of EPI-HAN with using the one-hot embedding and soft attention mechanism on each cell line.
-  model/EPI-HAN_OneHot_SelfSoftAttention/| the weight of EPI-HAN with using the one-hot embedding and self + soft attention mechanisms on each cell line.
-  model/EPI-HAN_dna2vec_SelfAttention/| the weight of EPI-HAN with using the dna2vec embedding and self attention mechanism on each cell line.
-  model/EPI-HAN_dna2vec_SoftAttention/ | the weight of EPI-HAN with using the dna2vec embedding and soft attention mechanism on each cell line.
-  model/EPI-HAN_dna2vec_SelfSoftAttention/| the weight of EPI-HAN with using dna2vec embedding and self + soft attention mechanisms on each cell line.
-  model/EPI-HAN_dna2vec_OneHot_SelfAttention/| the weight of EPI-HAN with using the dna2vec + one-hot embeddings and self attention mechanism on each cell line.
-  model/EPI-HAN_dna2vec_OneHot_SoftAttention/ | the weight of EPI-HAN with using the dna2vec + one-hot embeddings and soft attention mechanism on each cell line.
-  model/EPI-HAN_dna2vec_OneHot_SelfSoftAttention/| the weight of EPI-HAN with using dna2vec + one-hot embeddings and self + soft attention mechanisms on each cell line.
+Directory|Sub-directory |Content
+  ---|---|---
+  model/OneHot/SelfAttention/| the weight of EPI-HAN with using the one-hot embedding and self attention mechanism on each cell line.
+  model/OneHot/SoftAttention/| the weight of EPI-HAN with using the one-hot embedding and soft attention mechanism on each cell line.
+  model/OneHot/SelfSoftAttention/| the weight of EPI-HAN with using the one-hot embedding and self + soft attention mechanisms on each cell line.
+  model/Dna2vec/SelfAttention/| the weight of EPI-HAN with using the dna2vec embedding and self attention mechanism on each cell line.
+  model/Dna2vec/SoftAttention/| the weight of EPI-HAN with using the dna2vec embedding and soft attention mechanism on each cell line.
+  model/Dna2vec/SelfSoftAttention/| the weight of EPI-HAN with using dna2vec embedding and self + soft attention mechanisms on each cell line.
+  model/Dna2vec_OneHot/SelfAttention/| the weight of EPI-HAN with using the dna2vec + one-hot embeddings and self attention mechanism on each cell line.
+  model/Dna2vec_OneHot/SoftAttention/| the weight of EPI-HAN with using the dna2vec + one-hot embeddings and soft attention mechanism on each cell line.
+  model/Dna2vec_OneHot/SelfSoftAttention/| the weight of EPI-HAN with using dna2vec + one-hot embeddings and self + soft attention mechanisms on each cell line.
 
 References:
 
